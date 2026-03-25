@@ -1,18 +1,66 @@
-# Decentralized Student Savings Wallet (DSSW)
+## Foundry
 
-##  Deployment Information
-* **Network:** Ethereum Sepolia Testnet
-* **Contract Address:** `0xf768dfcda193099f62c5b463a215d1d55b17788f`
-* **Deployment Hash:** `0xd51c34daacf80235d58d3a82b3df364bdbabf49dafad032b05f2bb18757dee22`
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-## 📸 Interaction Proof
-Below is the screenshot of my successful interaction (Deposit/Withdrawal) on the Sepolia blockchain.
+Foundry consists of:
 
-![Sepolia Interaction]()<img width="1191" height="763" alt="contract interaction" src="https://github.com/user-attachments/assets/2cfd51b9-5cce-49ab-81dc-6b678f956703" />
-<img width="1167" height="588" alt="Screenshot 2026-02-13 235636" src="https://github.com/user-attachments/assets/065482b4-47fc-4ca4-abe3-a22703f9a3f7" />
+- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
+## Documentation
 
-## 🛠 Features
-* **Secure Deposits:** Users can send ETH to the contract.
-* **Personal Balances:** Tracks individual user savings via a mapping.
-* **Withdrawals:** Allows users to pull their funds back to their wallet.
+https://book.getfoundry.sh/
+
+## Usage
+
+### Build
+
+```shell
+$ forge build
+```
+
+### Test
+
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
